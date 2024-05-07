@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import icons from "rocketicons/tailwind";
 
 const config: Config = {
   content: [
@@ -6,6 +7,8 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  plugins: [],
+  plugins: [
+    icons
+  ],
 }
 export default config
